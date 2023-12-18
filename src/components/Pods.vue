@@ -1,5 +1,4 @@
 <template>
-    <!-- :data should be change in filterData in runtime -->
     <el-table :data="filterData" style="width: 60%;">
         <el-table-column type="expand">
             <template #default="props">
@@ -68,8 +67,6 @@ interface Pod {
 
 const data = ref<Pod[]>()
 
-// Todo: do test
-
 const handleDelete = async (index: number, row: Pod) => {
     // 将内容上传到服务器
     // 重新获取pod信息    
@@ -106,13 +103,6 @@ const mockData = computed(() =>
 
 const search = ref('')
 
-// const getPods = () => fetch('http://localhost:8080/v1/pods', {
-//     method: 'GET',
-// })
-//     .then(response => response.json())
-//     .catch((error) => {
-//         console.log(error)
-//     })
 
 const getPods = async () => {
     try {
@@ -124,15 +114,6 @@ const getPods = async () => {
     
 }
 
-// const deletePod = async (index: number) => {
-//     try {
-//         const response = await axios.delete('http://localhost:8080/v1/DeletePod', { data: {deleteIndex: index}});
-
-//     } catch(error) {
-//         ElMessage.error(error)
-//     }
-//     return response.data;
-// }
 
 const  timer = ref();
 

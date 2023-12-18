@@ -31,7 +31,7 @@
                 </div>
             </a-layout-content>
             <a-layout-footer :style="{ textAlign: 'center' }">
-                岗位实践作业 ©2023 Created 谢晓锋
+                岗位实践作业 ©2023 Created by 谢晓锋 2021280087
             </a-layout-footer>
         </a-layout>
     </a-layout>

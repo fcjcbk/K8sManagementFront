@@ -10,16 +10,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'pod',
-      component: Pods
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      redirect: '/pod'
     },
     {
       path: '/nodes',
@@ -35,11 +26,6 @@ const router = createRouter({
       path: '/createpod',
       name: 'createpod',
       component: CreatePod
-    },
-    {
-      path: '/test',
-      name: 'test',
-      component: Test
     },
   ]
 })
