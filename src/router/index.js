@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import Pods from '../components/Pods.vue'
 import Nodes from '../components/Nodes.vue'
 import CreatePod from '../components/CreatePod.vue'
@@ -10,7 +9,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/pod'
+      redirect: '/pods'
     },
     {
       path: '/nodes',
